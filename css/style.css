@@ -1,0 +1,231 @@
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+body{
+	overflow-y: hidden;
+	background-image: url("../img/bg/intro_bg.jpg");
+	background-repeat: no-repeat;
+}
+body, div, input{
+	margin: 0;
+	padding: 0;
+	font-family: 'Hanna';
+	font-style: normal;
+}
+#upper{
+	position: relative;
+	margin: 0 auto;
+	width: 600px;
+	height: 100px;
+	z-index: 2;
+	text-align: center;
+	background-image: url("../img/bg/upper_bg.png");
+}
+#lower{
+	position: relative;
+	margin: 0 auto;
+	width: 600px;
+	height: 100px;
+	z-index: 1;
+	text-align: center;
+	background-image: url("../img/bg/lower_bg.png");
+}
+#wrapper{
+	margin: 0 auto;
+	width: 600px;
+	height: 700px;
+	background: rgba(0, 0, 0, 0.5);
+}
+#intro, #intro_main, #intro_name, #intro_desc{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#intro_main{
+	position: absolute;
+	display: block;
+	text-align: center;
+}
+#intro_img{
+	width: 550px;
+	height: 650px;
+	display: none;
+}
+#intro_txt{
+	width: 550px;
+	height: 50px;
+}
+#intro_main input[type="button"]{
+	width: 550px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+	background-image: url("../img/intro/intro_txt.png");
+	border: 0;
+	outline: 0;
+	background-color: transparent !important;
+	display: none;
+}
+#intro_name{
+	display: none;
+	text-align: center;
+	line-height: 700px;
+}
+#intro_name_txt{
+	height: 30px;
+	border: 0;
+	outline: 0;
+	padding-left: 5px;
+	border-radius: 5px;
+}
+#intro_name_btn{
+	height: 30px;
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+
+}
+#intro_desc{
+	display: none;
+	text-align: center;
+}
+#intro_desc img{
+	width: 550px;
+	height: 650px;
+	display: none;
+}
+#intro_desc input[type="button"]{
+	width: 550px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+	background-image: url("../img/intro/intro_txt.png");
+	border: 0;
+	outline: 0;
+	background-color: transparent !important;
+	display: none;
+}
+#play{
+	position: absolute;
+	display: none;
+	width: 600px;
+	height: 700px;
+	background: url("../img/bg/bg.png");
+	background-repeat: repeat-y;
+}
+#play_table{
+	position: absolute;
+	bottom: 0;
+	width: 600px;
+	height: 50px;
+	text-align: center;
+
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+#play_controller{
+	position: absolute;
+	float: left;
+	width: 1px;
+	height: 1px;
+	border: 0;
+	outline: 0;
+}
+#play table td{
+	padding: 0;
+}
+#play_dist{
+	position: absolute;
+	left: 0;
+	padding: 10px 0 0 10px;
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px gray;
+}
+#play_score{
+	position: absolute;
+	right: 0;
+	padding: 10px 10px 0 0;
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px gray;
+}
+#play_state{
+
+}
+#end{
+	width: 600px;
+	height: 700px;
+	position: absolute;
+	display: none;
+	color: white;
+}
+#end_table{
+	width: 600px;
+	height: 500px;
+    text-align: center;
+    table-layout: fixed;
+    margin-top: 10px;
+    border-spacing: 0;
+}
+#end_table tr td{
+	padding: 0;
+	margin: 0;
+	border-spacing: 0;
+	outline: 0;
+	border-collapse: collapse;
+}
+#table_title{
+	width: 600px;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+	line-height: 50px;
+	margin-top: 20px;
+}
+#my_score{
+	width: 600px;
+	height: 50px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+	margin-top: 10px;
+}
+#replay_btn{
+	width: 600px;
+	height: 50px;
+	margin-top: 10px;
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+	background-image: url("../img/intro/replay_txt.png");
+	border: 0;
+	outline: 0;
+	background-color: transparent !important;
+	display: none;
+}
+.table_img_fireball{
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.table_img_firewall{
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 255px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#intro_bgm{
+	display: none;
+}
+#play_bgm{
+	display: none;
+}
